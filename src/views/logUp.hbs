@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center align-items-center trial-test-cosa">
+    <div>
+        <div class="m-3">
+            <h1>Registro</h1>
+        </div>
+
+        <div>
+
+            <form class="row" action="/logup" method="post" enctype="multipart/form-data" autocomplete="off">
+                <div class=" m-2">
+                    <input class="p-2" type="text" id="name" name="name" placeholder="Name" required value={{name}}>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="text" id="lastname" name="lastname" placeholder="Lastname" required value={{lastname}}>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="email" id="email" name="email" placeholder="e-mail" required value={{email}} >
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="password" id="password" name="password" placeholder="Password" required value={{password}}>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Repeat password" required>
+                </div>
+
+                <div class=" m-2">
+                    <label for="img">Profile image</label>
+                    <input type="file" id="img" name="img" required>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="text" id="age" name="age" placeholder="Age" required value={{age}}>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="text" id="address" name="address" placeholder="Address" required value={{address}}>
+                </div>
+
+                <div class=" m-2">
+                    <input class="p-2" type="phone" id="phoneNumber" name="phoneNumber" placeholder="Phone number" required value={{phoneNumber}}>
+                </div>
+
+                <div>
+                    <input class="btn btn-dark" type="submit" value="Logup"
+                        Log up
+                    >
+                </div>
+            </form>
+
+        </div>
+
+        <hr>
+        <div class="m-3">
+            <button class="btn btn-dark d-inline-flex" onclick="location.href = '/login'">
+                Ya tengo una cuenta
+            </button>
+        </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="align-middle">
+    <div>
+        <div class="m-3">
+            <h1>Iniciar sesión</h1>
+        </div>
+
+        <form class="row" action="/login" method="POST" role="form" autocomplete="off">
+
+            <div class=" m-2">
+                <input class="p-2" type="email" id="email" name="email" placeholder="e-mail" required>
+            </div>
+
+            <div class="m-2 p-2">
+                <input class="p-2" type="password" id="password" name="password" placeholder="contraseña" required>
+            </div>
+
+            <div>
+                <input class="btn btn-dark d-inline-flex m-2" type="submit" value="Login">
+            </div>
+        </form>
+
+        <hr class="m-1">
+
+        <div class="m-3">
+            <button class="btn btn-dark d-inline-flex" onclick="location.href = '/logup'">
+                Registrarme
+            </button>
+        </div>
+    </div>
+</div>

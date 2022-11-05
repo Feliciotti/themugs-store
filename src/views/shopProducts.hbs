@@ -1,0 +1,20 @@
+<div class="row m-5">
+    {{#each product}}
+        <div class="col-md-3">
+
+            <form action="/products" method="POST">
+                <div class="card p-2">
+
+                    <img class="w-80" src={{thumbnail}} alt="Product">
+                    <h4 class="m-2">{{title}}</h4>
+                    <p>{{desc}}</p>
+                    <p>${{price}}</p>
+
+                    <input name="_id" value={{_id}} type="text" hidden>
+                    <button class="btn btn-dark" type="submit"> Comprar </button>
+                </div>
+            </form>
+
+        </div>
+    {{/each}}
+</div>
